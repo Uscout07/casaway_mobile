@@ -7,23 +7,47 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "extra": {
+      "API_BASE_URL": "https://casaway-backend.onrender.com",
+      "eas": {
+        "projectId": "056ed1a0-9392-4726-a9bb-fd79dc78db04"
+      }
+    },
+    "updates": {
+      "enabled": false,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/056ed1a0-9392-4726-a9bb-fd79dc78db04",
+      "checkAutomatically": "ON_LOAD",
+      "disabledInDevelopment": true
+    },
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.udit007.CasawayMobileApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.udit007.CasawayMobileApp",
+      "versionCode": 2
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "owner": "udit007"
   }
 }
